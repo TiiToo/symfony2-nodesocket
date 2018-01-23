@@ -6,16 +6,14 @@ services:
     app.twig_extension:
         class: Reactorcoder\Symfony2NodesocketBundle\Twig\TwigExtension
         arguments:
-            - @service_container
+            - ['@service_container']
         tags:
             - { name: twig.extension }
 
     service_nodesocket:
         class: Reactorcoder\Symfony2NodesocketBundle\Loader
         calls:
-            - [setRequest, [@request_stack]]
+            - [setRequest, ['@request_stack']]
         arguments:
-            - @service_container
+            - ['@service_container']
             - "%node_config%"
-            #- @service_id
-            #- "some_value"
