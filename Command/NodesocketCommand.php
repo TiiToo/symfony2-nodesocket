@@ -30,12 +30,12 @@ class NodesocketCommand extends ContainerAwareCommand
     
     protected function getRuntimePath()
     {
-        return getcwd().DIRECTORY_SEPARATOR.'app'.DIRECTORY_SEPARATOR.'cache'.DIRECTORY_SEPARATOR.'runtime_node';
+        return getcwd().DIRECTORY_SEPARATOR.'var'.DIRECTORY_SEPARATOR.'cache'.DIRECTORY_SEPARATOR.'runtime_node';
     }
     
     protected function getRuntimeLogPath()
     {
-        return getcwd().DIRECTORY_SEPARATOR.'app'.DIRECTORY_SEPARATOR.'logs';
+        return getcwd().DIRECTORY_SEPARATOR.'var'.DIRECTORY_SEPARATOR.'logs';
     }
     
     protected function configure()
@@ -96,22 +96,22 @@ class NodesocketCommand extends ContainerAwareCommand
     Log file: {$this->getLogFile()}
                 
     USAGE
-      app/console {$this->getName()} [action] [parameter]
+      bin/console {$this->getName()} [action] [parameter]
 
     DESCRIPTION
       This command provides support for loading node socket extension
 
     EXAMPLES
-     * app/console {$this->getName()} start
+     * bin/console {$this->getName()} start
        Start socket server, check is started
 
-     * app/console {$this->getName()} stop
+     * bin/console {$this->getName()} stop
        Stop socket server
 
-     * app/console {$this->getName()} restart
+     * bin/console {$this->getName()} restart
        Restart socket server
 
-     * app/console {$this->getName()} getpid
+     * bin/console {$this->getName()} getpid
        Display socket pid
      
     MANUALLY CHECK
