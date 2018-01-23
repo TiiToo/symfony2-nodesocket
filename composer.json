@@ -1,5 +1,5 @@
 {
-    "name" : "tiitoo/symfony3-NodesJsSocket",
+    "name" : "tiitoo/symfony3-nodesjssocket",
     "description" : "A symfony package bundle for Node.Js event-driven socket application.",
     "type" : "symfony-bundle",
     "authors" : [{
