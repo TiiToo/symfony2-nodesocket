@@ -1,5 +1,5 @@
 {
-    "name" : "reactorcoder/symfony2-nodesocket",
+    "name" : "tiitoo/symfony2-nodesocket",
     "description" : "A symfony package bundle for event-driven socket application.",
     "type" : "symfony-bundle",
     "authors" : [{
